@@ -1,4 +1,5 @@
-var express = require('express');
+var express = require('express'),
+    util = require('util');
 
 var app = express();
 
@@ -13,4 +14,4 @@ app.get('/pixel', function (req, res) {
 });
 
 app.listen(1338);
-console.log('Server running at http://127.0.0.1:1338');
+util.log('Server running at http://127.0.0.1:1338');

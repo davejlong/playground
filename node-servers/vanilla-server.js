@@ -1,5 +1,6 @@
 var http = require('http'),
-    url = require('url');
+    url = require('url'),
+    util = require('util');
 
 
 var router = function (req, res) {
@@ -25,4 +26,4 @@ var router = function (req, res) {
 
 
 http.createServer(router).listen(1337, '127.0.0.1');
-console.log('Server running at http://127.0.0.1:1337');
+util.log('Server running at http://127.0.0.1:1337');

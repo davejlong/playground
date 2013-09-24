@@ -2,21 +2,17 @@
 
 ## Running the Tests
 
-### 1. Start the Vanilla server
+### 1. Siege Vanilla server
 
-    $ node vanilla-server.js
-
-### 2. Start Siege
-
+    $ node vanilla-server.js > vanilla.log &
     $ siege -c50 -d10 -t60S -i -f ./vanilla-urls.txt
+    $ kill -s SIGKILL {PID for Node server}
 
-### 3. Start the Express server
+### 2. Siege Express server
 
-    $ node express-server.js
-
-### 4. Start Siege
-
+    $ node express-server.js > express.log &
     $ siege -c50 -d10 -t60S -i -f ./express-urls.txt
+    $ kill -s SIGKILL {PID for Express server}
 
 ## Resuls
 
