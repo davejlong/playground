@@ -5,7 +5,7 @@
 ### 1. Siege Vanilla server
 
     $ node vanilla-server.js > vanilla.log &
-    $ siege -c50 -d10 -t60S -i -f ./vanilla-urls.txt
+    $ siege -c200 -t5M -f ./vanilla-urls.txt
     $ kill -s SIGKILL {PID for Node server}
 
 ### 2. Siege Express server
@@ -20,19 +20,17 @@
     Vanilla Node.js Server
     ======================
 
-    Lifting the server siege...      done.
-
-    Transactions:                    547 hits
-    Availability:                 100.00 %
-    Elapsed time:                  59.38 secs
-    Data transferred:               0.02 MB
-    Response time:                  0.00 secs
-    Transaction rate:               9.21 trans/sec
-    Throughput:                     0.00 MB/sec
-    Concurrency:                    0.01
-    Successful transactions:         547
-    Failed transactions:               0
-    Longest transaction:            0.01
+    Transactions:                  92617 hits
+    Availability:                  99.91 %
+    Elapsed time:                 299.30 secs
+    Data transferred:               2.43 MB
+    Response time:                  0.14 secs
+    Transaction rate:             309.45 trans/sec
+    Throughput:                     0.01 MB/sec
+    Concurrency:                   44.05
+    Successful transactions:       92617
+    Failed transactions:              79
+    Longest transaction:            2.10
     Shortest transaction:           0.00
 
     FILE: /usr/local/var/siege.log
@@ -41,17 +39,15 @@
     Express Node.js Server
     ======================
 
-    Transactions:                    589 hits
-    Availability:                 100.00 %
-    Elapsed time:                  59.26 secs
-    Data transferred:               0.02 MB
-    Response time:                  0.00 secs
-    Transaction rate:               9.94 trans/sec
-    Throughput:                     0.00 MB/sec
-    Concurrency:                    0.01
-    Successful transactions:         589
-    Failed transactions:               0
-    Longest transaction:            0.02
+    Transactions:                  84280 hits
+    Availability:                  99.86 %
+    Elapsed time:                 299.42 secs
+    Data transferred:               2.41 MB
+    Response time:                  0.20 secs
+    Transaction rate:             281.48 trans/sec
+    Throughput:                     0.01 MB/sec
+    Concurrency:                   57.13
+    Successful transactions:       84282
+    Failed transactions:             114
+    Longest transaction:            3.19
     Shortest transaction:           0.00
-
-    FILE: /usr/local/var/siege.log
