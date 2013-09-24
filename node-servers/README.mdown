@@ -18,7 +18,7 @@
 
     $ siege -c50 -d10 -t60S -i -f ./express-urls.txt
 
-## Resuls
+## Results
 
     ======================
     Vanilla Node.js Server
