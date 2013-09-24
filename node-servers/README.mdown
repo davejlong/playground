@@ -1,0 +1,61 @@
+# Load Testing Express vs. Vanilla Node.js Servers
+
+## Running the Tests
+
+### 1. Start the Vanilla server
+
+    $ node vanilla-server.js
+
+### 2. Start Siege
+
+    $ siege -c50 -d10 -t60S -i -f ./vanilla-urls.txt
+
+### 3. Start the Express server
+
+    $ node express-server.js
+
+### 4. Start Siege
+
+    $ siege -c50 -d10 -t60S -i -f ./express-urls.txt
+
+## Resuls
+
+    ======================
+    Vanilla Node.js Server
+    ======================
+
+    Lifting the server siege...      done.
+
+    Transactions:                    547 hits
+    Availability:                 100.00 %
+    Elapsed time:                  59.38 secs
+    Data transferred:               0.02 MB
+    Response time:                  0.00 secs
+    Transaction rate:               9.21 trans/sec
+    Throughput:                     0.00 MB/sec
+    Concurrency:                    0.01
+    Successful transactions:         547
+    Failed transactions:               0
+    Longest transaction:            0.01
+    Shortest transaction:           0.00
+
+    FILE: /usr/local/var/siege.log
+
+    ======================
+    Express Node.js Server
+    ======================
+
+    Transactions:                    589 hits
+    Availability:                 100.00 %
+    Elapsed time:                  59.26 secs
+    Data transferred:               0.02 MB
+    Response time:                  0.00 secs
+    Transaction rate:               9.94 trans/sec
+    Throughput:                     0.00 MB/sec
+    Concurrency:                    0.01
+    Successful transactions:         589
+    Failed transactions:               0
+    Longest transaction:            0.02
+    Shortest transaction:           0.00
+
+    FILE: /usr/local/var/siege.log
