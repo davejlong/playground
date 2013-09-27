@@ -5,13 +5,13 @@
 ### 1. Siege Vanilla server
 
     $ node vanilla-server.js > vanilla.log &
-    $ siege -c200 -t5M -f ./vanilla-urls.txt
+    $ siege -c200 -t5M -f ./urls.txt
     $ kill -s SIGKILL {PID for Node server}
 
 ### 2. Siege Express server
 
     $ node express-server.js > express.log &
-    $ siege -c200 -t5M -f ./express-urls.txt
+    $ siege -c200 -t5M -f ./urls.txt
     $ kill -s SIGKILL {PID for Express server}
 
 ## Results
