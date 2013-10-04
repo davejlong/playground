@@ -16,10 +16,15 @@
   ],
   "dependencies": {
     "d3": "~3.3.6",
-    "nvd3": "davejlong/nvd3"
+    "nvd3": "davejlong/nvd3",
+    "html5-boilerplate": "~4.3.0"
   },
   "devDependencies": {
     "mocha": "~1.13.0",
-    "chai": "~1.8.0"
+    "chai": "~1.8.0",
+    "chance": "~0.4.3"
+  },
+  "resolutions": {
+    "d3": "~3.3.6"
   }
 }
