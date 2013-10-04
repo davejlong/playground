@@ -1,0 +1,25 @@
+{
+  "name": "d3-playground",
+  "version": "0.0.0",
+  "homepage": "https://github.com/davejlong/playground",
+  "authors": [
+    "David Long <dave@davejlong.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "~3.3.6",
+    "nvd3": "davejlong/nvd3"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "chai": "~1.8.0"
+  }
+}

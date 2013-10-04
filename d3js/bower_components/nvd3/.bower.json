@@ -1,0 +1,14 @@
+{
+  "name": "nvd3",
+  "_cacheHeaders": {
+    "ETag": "\"dd95d6834dff1f0063846f25e8591b4f\"",
+    "Content-Length": "54033",
+    "Content-Type": "text/html; charset=utf-8"
+  },
+  "_release": "e-tag:dd95d6834",
+  "main": "index",
+  "_source": "https://github.com/davejlong/nvd3",
+  "_target": "*",
+  "_originalSource": "https://github.com/davejlong/nvd3",
+  "_direct": true
+}
